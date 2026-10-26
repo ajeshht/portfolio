@@ -20,15 +20,15 @@
 </head>
 
 <body>
-    <header>
+    <header id="top-section">
         <div class="head-logo">
             <h2>AJESH <a href="./index.html"></a></h2><span id="name-T">T</span>
         </div>
         <div class="header-options">
-            <a href="">Home</a>
+            <a href="#top-section">Home</a>
             <a href="">About</a>
-            <a href="">Skills</a>
-            <a href="">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a>
             <a href="">Experience</a>
             <a href="">Contact</a>
         </div>
@@ -54,9 +54,7 @@
                 <a href="" target="_blank"><i class="fa-solid fa-envelope" style="color: rgb(244, 247, 251);"></i></a>
                 <a href="" target="_blank"><i class="fa-brands fa-instagram" style="color: rgb(244, 247, 251);"></i></a>
             </div>
-            <div class="links">
 
-            </div>
         </div>
         <div class="hero-img">
             <img src="./assets/hero-photo.png" alt="">
@@ -64,7 +62,7 @@
             <h4>SOFTWARE DEVELOPER</h4>
         </div>
     </section>
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="about-img">
             <!-- Profile photo -->
             <img src="./assets/about-img.png" alt="">
@@ -111,7 +109,7 @@
             </div>
         </div>
     </section>
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
         <div class="skills-content">
             <h4>TECHNICAL SKILLS</h4>
             <h1>Technologies I Work With</h1>
@@ -206,38 +204,152 @@
             </div>
         </div>
     </section>
-    <section class="project-section">
+    <section class="project-section" id="project">
         <div class="project-sub">
             <div>
                 <h4>FEATURED PROJECTS</h4>
                 <h1>Some of My Work</h1>
             </div>
-            <button id="project-btn">View All Projects <i class="fa-solid fa-arrow-right" style="color: rgb(50, 157, 255);"></i> </button>
+            <button id="project-btn">View All Projects <i class="fa-solid fa-arrow-right"
+                    style="color: rgb(50, 157, 255);"></i> </button>
         </div>
-        <div>
-            <div>
-                <img src="" alt="">
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="./assets/amr.png" alt="">
                 <h3>Autonomous Mobile Robot<br> for Campus Delivery</h3>
-                <h4>SLAM based autonomous navigation with <br> LiDAR, obstacle avoidance and Android app <br> control for file delivery</h4>
+                <h4>SLAM based autonomous navigation with <br> LiDAR, obstacle avoidance and Android app <br> control
+                    for file delivery</h4>
+                <div class="tech-info">
+                    <div>
+                        <label for="">Python</label>
+                        <label for="">SLAM</label>
+                        <label for="">ROS</label>
+                    </div>
+                    <button><i class="fa-solid fa-arrow-right" style="color: rgb(16, 56, 87);"></i></button>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="project-card">
+                <img src="./assets/arm.png" alt="">
                 <h3>5-DOF Robotic Arm with <br> Python GUI</h3>
-                <h4>Robotic arm control using Arduino, PCA9685<br> and Tkinter GUI with position saving and <br> playback functionality.</h4>
-                <div>
-                    <label for="">Python</label>
-                    <button ></button>
+                <h4>Robotic arm control using Arduino, PCA9685<br> and Tkinter GUI with position saving and <br>
+                    playback functionality.</h4>
+                <div class="tech-info">
+                    <div>
+                        <label for="">Python</label>
+                        <label for="">Arduino</label>
+                        <label for="">Tkinter</label>
+                    </div>
+                    <button><i class="fa-solid fa-arrow-right" style="color: rgb(16, 56, 87);"></i></button>
                 </div>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="project-card">
+                <img src="./assets/prediction.png" alt="">
                 <h3>House Price Prediction Project</h3>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id maxime, enim dicta tempore veritatis aperiam, consequuntur inventore ratione</h4>
-                <div>
-                    <label for="">python</label>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id maxime, enim dicta tempore
+                    veritatis aperiam, consequuntur inventore ratione</h4>
+                <div class="tech-info">
+                    <div>
+                        <label for="">Python</label>
+                        <label for="">Regression</label>
+                        <label for="">ML</label>
+                    </div>
+
+                    <button><i class="fa-solid fa-arrow-right" style="color: rgb(16, 56, 87);"></i></button>
                 </div>
             </div>
-            <div></div>
+        </div>
+    </section>
+    <section class="experience-section">
+        <div class="profession">
+            <h4>EXPERIENCE</h4>
+            <h1>My Professional Journey</h1>
+            <div class="prof-all">
+                <img src="https://images.seeklogo.com/logo-png/30/1/keltron-logo-png_seeklogo-304471.png" alt="">
+                <div class="content-section">
+                    <h3>Machine Learning & AI Intern</h3>
+                    <p>Keltron Knowledge Center</p>
+                    <ul>
+                        <li>Worked on ML and AI based projeccts and real-world problem solving.</li>
+                        <li>Gained hands-on experience in data preprocessing model development and deployment</li>
+                        <li>Collaborated on AI and automation related aolutions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="academic-section" id="acdemic-sec">
+        <h4>EDUCATION</h4>
+        <h1>My Academic Background</h1>
+        <div class="main-education">
+            <div class="edcation">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AvRGnPb4QxiCGp-Cu_-KRTS2Re-20CX3XKJrCXSAXw&s=10"
+                    alt="" style="border-radius: 50%;width: 100px; ">
+                <div class="ed-content">
+                    <div class="grad-year">
+                        <h3>B.Tech in Robotics and AI</h3>
+                        <label for="">2022-2026</label>
+                    </div>
+                    <p>Rajiv Gandhi Institute of Technology, Kottayam</p>
+                    <p>CGPA: 7.1/10</p>
+                </div>
+            </div>
+            <div class="edcation">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl3QPMJILCPIR973sdWywqKCPWcLeH9DDKeVktpoJ0Gg&s"
+                    alt="" style="border-radius: 50%;width: 100px;">
+                <div class="ed-content">
+                    <div class="grad-year">
+                        <h3>Higher Secondary(Science)</h3>
+                        <label for="">2019-2021</label>
+                    </div>
+                    <p>GVHSS Chelari,Malappuram</p>
+                    <p>Percentage: 96%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-sec">
+        <div class="sub-contact-sec">
+            <div class="contact-content">
+                <h4>CONTACT</h4>
+                <h1>Let's Work Together</h1>
+                <p>I'm always open to discussing new opportunities, intresting <br> projects or just a tech chat. Feel
+                    free to reac out..!</p>
+                <div class="links-icon" style="background-color: transparent;">
+                    <a href="https://github.com/ajeshht" target="_blank"><i class="fa-brands fa-github"
+                            style="color: rgb(244, 247, 251);"></i></a>
+                    <a href="https://www.linkedin.com/in/ajesht/" target="_blank"><i class="fa-brands fa-linkedin"
+                            style="color: rgb(244, 247, 251);"></i></a>
+                    <a href="" target="_blank"><i class="fa-solid fa-envelope"
+                            style="color: rgb(244, 247, 251);"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-instagram"
+                            style="color: rgb(244, 247, 251);"></i></a>
+
+                </div>
+            </div>
+            <div class="communication-sec">
+                <div class="email-sec">
+                    <i class="fa-regular fa-envelope" style="color: rgb(116, 192, 252);"></i>
+                    <div class="details">
+                        <h2>Email</h2>
+                        <p>ajeshthachedath@gmail.com</p>
+                    </div>
+                </div>
+                <div class="loc-sec">
+                    <i class="fa-solid fa-location-dot" style="color: rgb(116, 192, 252); "></i>
+                    <div class="details">
+                        <h2>Location</h2>
+                        <p>Kerala,India</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#hero"><button><i id="top-btn" class="fa-solid fa-circle-arrow-up" style="color: rgb(116, 192, 252);"></i></button></a>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="footer-copy">
+            <p>&copy Copyright, All rights reserved</p>
+        </div>
+        
         </div>
     </section>
 </body>
